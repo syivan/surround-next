@@ -1,0 +1,55 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import styles from "./SoundBox.module.css";
+import Image from "next/image";
+
+const SoundBox = ({ playOn, data, playerID }) => {
+  const [volume, setVolume] = useState(0);
+
+  useEffect(() => {
+    let audioPlayer = document.getElementById(playerID);
+    audioPlayer.volume = volume;
+
+    if (volume >= 0.02 && playOn) {
+      audioPlayer.play();
+    } else {
+      audioPlayer.pause();
+    }
+  }, [volume, playOn]);
+
+  return (
+    <section className={styles["sound-box-container"]}>
+      <img
+        src={`/img/${data.imageID}`}
+        height={100}
+        width={100}
+        alt={data.name}
+        className={styles["icon-prop"]}
+      ></img>
+      <section className={styles["sound-info-container"]}>
+        <div className={styles["sound-info"]}>
+          <h3 className={styles["sound-label"]}>{data.name}</h3>
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.02"
+            className="slider"
+            id="sound-slider"
+            value={volume}
+            onChange={(e) => {
+              setVolume(e.target.value);
+            }}
+          ></input>
+
+          <audio preload="auto" id={playerID} loop>
+            <source src={`/audio/${data.audioID}`} type="audio/mp4"></source>
+          </audio>
+        </div>
+      </section>
+    </section>
+  );
+};
+
+export default SoundBox;

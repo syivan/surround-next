@@ -1,0 +1,41 @@
+.profile-image {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.statement {
+  flex: 4;
+}
+
+.about-main-header {
+  display: flex;
+  justify-content: center;
+}
+
+.about-main-header h2 {
+  font-size: xx-large;
+  margin-top: 1rem;
+}
+
+.purpose-declaration {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.circular {
+  border-radius: 40%;
+}
+
+.credits {
+  display: flex;
+}
+
+.item-credits {
+  flex: 1;
+  transition: 0.5s;
+}
+
+.credits li {
+  line-height: 2rem;
+}

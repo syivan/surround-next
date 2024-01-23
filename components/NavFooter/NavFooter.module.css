@@ -1,0 +1,18 @@
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links {
+  flex-grow: 1;
+}
+
+.footer-links li {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.copyright-statement {
+  flex-grow: 5;
+}

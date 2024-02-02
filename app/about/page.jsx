@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "../../styles/about.module.css";
+import styles from "@/styles/about.module.css";
 import Image from "next/image";
-import ProfileImg from "../../public/img/i.svg";
+import ProfileImg from "@/public/img/i.svg";
 
-const About = () => {
+const Page = () => {
   return (
     <React.Fragment>
       <section className={styles["about-main-header"]}>
@@ -21,7 +21,7 @@ const About = () => {
           </p>
         </section>
         <section className={styles["profile-image"]}>
-          <Image src={ProfileImg} className={styles["circular"]} />
+          <Image src={ProfileImg} className={styles["circular"]} alt="me" />
         </section>
       </section>
 
@@ -101,4 +101,4 @@ const About = () => {
 //  Map Filter implementation
 //  Transition effects
 
-export default About;
+export default Page;

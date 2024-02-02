@@ -2,26 +2,15 @@
   --primary-color: #1a1a1a;
 }
 
+* {
+  font-style: bold;
+}
+
+.set-viewbox {
+  margin-top: 1rem;
+}
+
 /* CARD COMPONENTS */
-.card-img {
-  width: 100%;
-  height: 180;
-}
-
-.card-title {
-  text-transform: capitalize;
-  letter-spacing: normal;
-  font-weight: bold;
-}
-
-.channel-title {
-  font-weight: bold;
-}
-.search-banner {
-  font-size: 1.2rem;
-  margin-top: 1.5rem;
-}
-
 .react-player {
   height: 62vh !important;
   width: 100% !important;
@@ -168,11 +157,6 @@ body {
 .spinner {
   display: flex;
   align-items: center;
-}
-
-.query-heading {
-  color: red;
-  text-transform: none;
 }
 
 .purpose-declaration {

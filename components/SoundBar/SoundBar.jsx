@@ -3,10 +3,10 @@
 import React from "react";
 import { Row, Container } from "react-bootstrap";
 import { useState } from "react";
-import PlayControl from "../PlayControl/PlayControl";
-import { data } from "../../public/files";
+import PlayControl from "@/components/PlayControl/PlayControl";
+import { data } from "@/public/files";
 import styles from "./SoundBar.module.css";
-import SoundBox from "../SoundBox/SoundBox";
+import SoundBox from "@/components/SoundBox/SoundBox";
 
 const SoundBar = () => {
   const [isPlaying, setIsPlaying] = useState(false);

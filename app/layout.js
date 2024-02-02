@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <NavHeader />
-        <Container>{children}</Container>
+        <Container className="set-viewbox">{children}</Container>
         <NavFooter />
       </body>
     </html>

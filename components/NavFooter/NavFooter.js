@@ -13,7 +13,7 @@ const Footer = () => {
           Copyright © {year}. All Rights Reserved.
         </section>
         <Row lg={2} md={2} xs={2} className={styles["footer-links"]}>
-          <Link href="/search/Music Today">
+          <Link href="/search">
             <li>Youtube Client</li>
           </Link>
           <Link href="/about">

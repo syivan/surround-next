@@ -9,7 +9,7 @@ export default function Home() {
       <h1>Sound Tailored to you</h1>
       <h5>How you prefer it.</h5>
       <section>
-        <SoundBar />
+        <SoundBar key={1} />
       </section>
     </Container>
   );

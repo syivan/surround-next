@@ -5,7 +5,14 @@ import styles from "./SoundBox.module.css";
 import Image from "next/image";
 
 const SoundBox = ({ playOn, data, playerID }) => {
-  const [volume, setVolume] = useState(0);
+  let initialVol = 0;
+  if (typeof window !== "undefined") {
+    initialVol = sessionStorage.getItem(`${data.name}`)
+      ? parseFloat(sessionStorage.getItem(`${data.name}`))
+      : 0;
+  }
+
+  const [volume, setVolume] = useState(initialVol);
 
   useEffect(() => {
     let audioPlayer = document.getElementById(playerID);
@@ -16,6 +23,8 @@ const SoundBox = ({ playOn, data, playerID }) => {
     } else {
       audioPlayer.pause();
     }
+
+    sessionStorage.setItem(`${data.name}`, volume.toString());
   }, [volume, playOn]);
 
   return (

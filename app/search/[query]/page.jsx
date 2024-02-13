@@ -16,7 +16,6 @@ const getSearchFeed = async (query) => {
 export default async function Feed({ params }) {
   let heading = decodeURI(params.query);
   let feed = await getSearchFeed(heading);
-  console.log(feed);
   return (
     <React.Fragment>
       <SearchBar />

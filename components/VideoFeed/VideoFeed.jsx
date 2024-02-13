@@ -23,7 +23,7 @@ const VideoFeed = ({ videos }) => {
       <VideoCard item={item} size={size} />
     </Container>
   ));
-
+  
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 6;
   const totalPosts = videoMap.length;

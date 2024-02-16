@@ -1,6 +1,5 @@
 import SearchBar from "@/components/SearchBar/SearchBar";
 import React from "react";
-import { Container } from "react-bootstrap";
 import styles from "@/styles/search.module.css";
 
 const Page = () => {

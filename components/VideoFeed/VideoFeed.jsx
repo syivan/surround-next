@@ -5,12 +5,19 @@ import VideoCard from "../VideoCard/VideoCard";
 import { Row } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import styles from "./VideoFeed.module.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Paginate from "../Paginate/Paginate";
 
 const VideoFeed = ({ videos }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 6;
+
+  const videoMap = videos.map((item, index) => (
+    <Container key={index}>
+      <VideoCard item={item} size={size} />
+    </Container>
+  ));
+
   const totalPosts = videoMap.length;
 
   const size = {
@@ -21,12 +28,6 @@ const VideoFeed = ({ videos }) => {
   };
 
   if (!videos?.length) return <Loading />;
-
-  const videoMap = videos.map((item, index) => (
-    <Container key={index}>
-      <VideoCard item={item} size={size} />
-    </Container>
-  ));
 
   const previousPage = () => {
     if (currentPage !== 1) setCurrentPage(currentPage - 1);

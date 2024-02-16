@@ -83,7 +83,7 @@ const Page = () => {
               <a href="https://freesound.org/people/gepetto3548/sounds/689986/">
                 gepetto3548
               </a>{" "}
-              - Excellent thunder & rain 25 Sept '21
+              - Excellent thunder & rain 25 Sept 21
             </li>
             <li>
               <a href="https://pixabay.com/sound-effects/soft-rain-ambient-111154/">

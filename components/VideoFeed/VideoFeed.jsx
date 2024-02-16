@@ -9,6 +9,10 @@ import { useState, useEffect } from "react";
 import Paginate from "../Paginate/Paginate";
 
 const VideoFeed = ({ videos }) => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 6;
+  const totalPosts = videoMap.length;
+
   const size = {
     imageSize: "12rem",
     titleSize: "1rem",
@@ -23,10 +27,6 @@ const VideoFeed = ({ videos }) => {
       <VideoCard item={item} size={size} />
     </Container>
   ));
-  
-  const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 6;
-  const totalPosts = videoMap.length;
 
   const previousPage = () => {
     if (currentPage !== 1) setCurrentPage(currentPage - 1);

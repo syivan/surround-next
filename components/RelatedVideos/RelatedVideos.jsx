@@ -51,7 +51,7 @@ export default function RelatedVideos({ relatedFeed }) {
             postsPerPage * (currentPage - 1),
             postsPerPage * currentPage
           )}
-          <section className="d-flex align-items-center">
+          <section className="d-flex align-items-center mb-lg-5">
             <Paginate
               totalPosts={totalPosts}
               postsPerPage={postsPerPage}

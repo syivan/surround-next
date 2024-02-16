@@ -12,20 +12,20 @@ const VideoFeed = ({ videos }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 6;
 
-  const videoMap = videos.map((item, index) => (
-    <Container key={index}>
-      <VideoCard item={item} size={size} />
-    </Container>
-  ));
-
-  const totalPosts = videoMap.length;
-
   const size = {
     imageSize: "12rem",
     titleSize: "1rem",
     channelSize: "0.8rem",
     bodySize: "6rem",
   };
+
+  const videoMap = videos.map((item, index) => (
+    <Container key={index}>
+      <VideoCard item={item} size={size} />
+    </Container>
+  ));
+
+  const totalPosts = 36;
 
   if (!videos?.length) return <Loading />;
 

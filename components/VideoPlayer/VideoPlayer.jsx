@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { useState } from "react";
-import ReactPlayer from "react-player";
+import ReactPlayer from "react-player/lazy";
 import styles from "./VideoPlayer.module.css";
 
 const VideoPlayer = ({ videoID }) => {

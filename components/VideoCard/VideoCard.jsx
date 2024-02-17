@@ -20,7 +20,7 @@ const VideoCard = ({
       <Link href={`/video/${videoId}`}>
         <Card.Img
           variant="top"
-          src={`http://img.youtube.com/vi/${videoId}/sddefault.jpg`}
+          src={`https://i.ytimg.com/vi_webp/${videoId}/sddefault.webp`}
           className={styles["card-img"]}
           alt={snippet.title}
           style={{ height: `${size.imageSize}` }}

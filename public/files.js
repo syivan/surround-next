@@ -1,37 +1,37 @@
 export const data = [
   {
     name: "Rain",
-    imageID: "rain.png",
+    imageID: "rain.webp",
     audioID: "rain.mp4",
     playerID: "rain-player",
   },
   {
     name: "Thunder",
-    imageID: "thunder.png",
+    imageID: "thunder.webp",
     audioID: "thunder.mp4",
     playerID: "thunder-player",
   },
   {
     name: "Cafe",
-    imageID: "cafe.png",
+    imageID: "cafe.webp",
     audioID: "cafe.mp4",
     playerID: "cafe-player",
   },
   {
     name: "Fireplace",
-    imageID: "fire.png",
+    imageID: "fire.webp",
     audioID: "fire.mp4",
     playerID: "fire-player",
   },
   {
     name: "Birds",
-    imageID: "bird.png",
+    imageID: "bird.webp",
     audioID: "birds.mp4",
     playerID: "bird-player",
   },
   {
     name: "Stream",
-    imageID: "stream.png",
+    imageID: "stream.webp",
     audioID: "stream.mp4",
     playerID: "stream-player",
   },

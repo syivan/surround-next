@@ -4,6 +4,8 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import ReactPlayer from "react-player/lazy";
 import styles from "./VideoPlayer.module.css";
+import LiteYoutubeEmbed from "react-lite-youtube-embed";
+import "react-lite-youtube-embed/dist/LiteYoutubeEmbed.css";
 
 const VideoPlayer = ({ videoID }) => {
   const [isClient, setIsClient] = useState(false);
@@ -12,10 +14,10 @@ const VideoPlayer = ({ videoID }) => {
     setIsClient(true);
   }, []);
   return isClient ? (
-    <ReactPlayer
-      url={`https://www.youtube.com/watch?v=${videoID}`}
-      className={styles["react-player"]}
-      controls={true}
+    <LiteYoutubeEmbed
+      id={videoID}
+      title="Youtube Embeddable"
+      poster="sddefault"
     />
   ) : (
     <h1>Never Rendered</h1>

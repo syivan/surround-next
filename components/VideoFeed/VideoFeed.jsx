@@ -2,8 +2,7 @@
 
 import Loading from "../Loading/Loading";
 import VideoCard from "../VideoCard/VideoCard";
-import { Row } from "react-bootstrap";
-import { Container } from "react-bootstrap";
+import { Row, Container } from "react-bootstrap";
 import styles from "./VideoFeed.module.css";
 import { useState } from "react";
 import Paginate from "../Paginate/Paginate";

@@ -14,10 +14,14 @@ const Footer = () => {
         </section>
         <Row lg={2} md={2} xs={2} className={styles["footer-links"]}>
           <Link href="/search">
-            <li>Youtube Client</li>
+            <ul>
+              <li>Youtube Client</li>
+            </ul>
           </Link>
           <Link href="/about">
-            <li>About</li>
+            <ul>
+              <li>About</li>
+            </ul>
           </Link>
         </Row>
       </footer>

@@ -5,9 +5,7 @@ import SearchBar from "@/components/SearchBar/SearchBar";
 import VideoPlayer from "@/components/VideoPlayer/VideoPlayer";
 import styles from "@/styles/video.module.css";
 import VideoDetails from "@/components/VideoDetails/VideoDetails";
-import SoundAccordion, {
-  MemoizedMenu,
-} from "@/components/SoundAccordion/SoundAccordion";
+import SoundAccordion from "@/components/SoundAccordion/SoundAccordion";
 import RelatedVideos from "@/components/RelatedVideos/RelatedVideos";
 
 const getRelatedFeed = async (videoID) => {

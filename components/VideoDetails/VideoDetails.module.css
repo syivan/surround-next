@@ -1,36 +1,29 @@
-/* DISPLAY COMPONENTS */
 .channel-title {
-  font-weight: bold;
+  font-weight: 700;
   color: var(--primary-color);
 }
-
 .video-title {
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: capitalize;
   letter-spacing: normal;
   margin-top: 1rem;
 }
-
 .display-container {
   margin-top: 2rem;
 }
-
 .video-ambience-container {
   width: 80%;
   position: sticky;
   top: 86px;
-  margin-right: 0px;
+  margin-right: 0;
 }
-
 .accordion {
   margin-bottom: 2rem;
 }
-
 .video-metrics {
   margin-left: auto;
 }
-
 .full-content {
   display: flex;
 }

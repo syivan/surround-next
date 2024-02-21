@@ -2,20 +2,16 @@
   display: flex;
   justify-content: center;
 }
-
 .search-header h2 {
   margin-top: 1.5rem;
 }
-
 .query-section {
   margin-top: 2rem;
 }
-
 .search-banner {
   font-size: 1.2rem;
   margin-top: 1rem;
 }
-
 .query-heading {
   color: red;
   text-transform: none;

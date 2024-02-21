@@ -3,11 +3,9 @@
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
-
 .search-bar {
   flex-grow: 2;
 }
-
 .search-button {
   flex-grow: 1;
   width: 10%;

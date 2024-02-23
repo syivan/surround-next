@@ -1,7 +1,6 @@
 import SoundBar from "@/components/SoundBar/SoundBar";
 import styles from "./page.module.css";
 import { Container } from "react-bootstrap";
-import SearchBar from "@/components/SearchBar/SearchBar";
 
 export default function Home() {
   return (

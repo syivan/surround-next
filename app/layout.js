@@ -9,7 +9,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "A Sound Ambience",
+  title: "The Sound Ambience",
   description: "Ambience-based Effects Player",
 };
 

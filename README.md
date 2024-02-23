@@ -2,7 +2,6 @@
 <br>
 <br>
 ### "A soothing and minimalist webplayer focused on providing a calming browsing experience with ambience" - esteemed friend
-<br>
 
 ## Getting Started
 
@@ -26,10 +25,14 @@ npm install
 npm run dev
 ```
 
-### Deploy development 
+### deploy development
+```
 npm run dev
-### Run tests
+```
+### run tests
+```
 npm run test
+```
 
 
 ## Supported Music Platforms

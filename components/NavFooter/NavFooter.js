@@ -9,7 +9,10 @@ const Footer = () => {
   return (
     <React.Fragment>
       <footer className={styles["footer-section"]}>
-        <section className={styles["copyright-statement"]}>
+        <section
+          className={styles["copyright-statement"]}
+          data-testid="copyright"
+        >
           Copyright © {year}. All Rights Reserved.
         </section>
         <Row lg={2} md={2} xs={2} className={styles["footer-links"]}>
@@ -18,7 +21,7 @@ const Footer = () => {
               <li>Youtube Client</li>
             </ul>
           </Link>
-          <Link href="/about">
+          <Link href="/about" data-testid="link-about">
             <ul>
               <li>About</li>
             </ul>

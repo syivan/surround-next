@@ -8,7 +8,8 @@ const options = {
 
 export const fetchSearch = async (query) => {
   const response = await fetch(
-    `https://youtube-v31.p.rapidapi.com/search?q=${query}&part=snippet%2Cid&&maxResults=40`,
+    `https://youtube-v31.p.rapidapi.com/search?q=${query}
+    &part=snippet%2Cid&&maxResults=40`,
     options
   );
   return response;

@@ -1,3 +1,4 @@
+
 import { Inter } from "next/font/google";
 import NavHeader from "@/components/NavHeader/NavHeader";
 import NavFooter from "@/components/NavFooter/NavFooter";

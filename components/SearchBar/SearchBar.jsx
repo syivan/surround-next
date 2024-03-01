@@ -13,10 +13,14 @@ export default function SearchBar() {
     setSearchTerm(event.target.value);
   };
 
-  const onSubmit = (event) => {
+  const onSubmit = async (event) => {
     event.preventDefault();
 
     if (searchTerm) {
+      await fetch('/api/subscribe', {
+        method: 'POST',
+        body: JSON.stringify({ name: searchTerm })
+      })
       router.push(`/search/${searchTerm}`);
     }
   };

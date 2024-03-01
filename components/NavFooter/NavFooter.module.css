@@ -2,14 +2,18 @@
   display: flex;
   justify-content: space-between;
 }
+
 .footer-links {
   flex-grow: 1;
 }
+
 .footer-links li {
   display: flex;
   justify-content: center;
   color: #fff;
+  font-weight: 400;
 }
+
 .copyright-statement {
   flex-grow: 5;
 }

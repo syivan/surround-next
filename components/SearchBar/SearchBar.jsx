@@ -17,10 +17,6 @@ export default function SearchBar() {
     event.preventDefault();
 
     if (searchTerm) {
-      await fetch('/api/subscribe', {
-        method: 'POST',
-        body: JSON.stringify({ name: searchTerm })
-      })
       router.push(`/search/${searchTerm}`);
     }
   };

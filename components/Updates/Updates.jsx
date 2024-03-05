@@ -10,9 +10,13 @@ export default function Updates({ status, handleStatus }) {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        const formData = new FormData(event.target);
-        console.log(event.target.mail.value);
-
+        const date = new Date();
+        const formattedDate = date.toISOString().split('T')[0];
+        await fetch('/api/subscribe', {
+            method: 'POST',
+            body: JSON.stringify({ email: event.target.mail.value, enrollment_date: formattedDate })
+        })
+        handleStatus();
     }
 
     return (
@@ -26,10 +30,10 @@ export default function Updates({ status, handleStatus }) {
                     </Modal.Header>
                     <Modal.Body>
                         <FloatingLabel controlId="floatingInput" label="Email address" className="mb-2">
-                            <Form.Control type="email" aria-describedby="emailHelpSection" name="mail" />
+                            <Form.Control type="email" aria-describedby="emailHelpSection" name="mail" required />
                         </FloatingLabel>
                         <Form.Text id="emailHelpSection" className="text-primary">
-                            Get an email every now and then about new features and sounds coming to A Soft Murmur. No spam ever and one-click unsubscribe.
+                            Join our email newsletter bringing you the latest features, articles and ambience coming to The Sound Ambience.
                         </Form.Text>
                     </Modal.Body>
                     <Modal.Footer>

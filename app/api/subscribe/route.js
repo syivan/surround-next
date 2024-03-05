@@ -20,8 +20,8 @@ export async function POST(req) {
     try {
         const receipt = await req.json();
         const result = await executeSchema({
-            query: 'INSERT INTO users(email) VALUES(?)',
-            values: receipt.email
+            query: 'INSERT INTO users SET ?',
+            values: { email: receipt.email, enrollment_date: receipt.enrollment_date }
         })
         console.log(receipt);
         return new Response('OK');

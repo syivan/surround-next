@@ -37,7 +37,7 @@ export default function Updates({ status, handleStatus }) {
                         </Form.Text>
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button variant="secondary" onClick={handleStatus}>Close</Button>
+                        <Button variant="secondary" onClick={handleStatus} type="button">Close</Button>
                         <Button variant="primary" type="submit">Get Updates</Button>
                     </Modal.Footer>
                 </Form>

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { Row } from "react-bootstrap";
@@ -36,13 +36,13 @@ const Footer = () => {
           </Link>
           <ul>
             <Updates status={isRevealed} handleStatus={handleClose} />
-            <Link onClick={handleShow} href="#">
+            <div onClick={handleShow}>
               <li>Stay Updated</li>
-            </Link>
+            </div>
           </ul>
         </Row>
       </footer>
-    </React.Fragment >
+    </React.Fragment>
   );
 };
 

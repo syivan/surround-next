@@ -33,6 +33,8 @@ const db = mysql({
   },
 });
 
+//delete .env
+//sent to Naresh for validation
 export default async function executeSchema({ query, values }) {
   try {
     const results = await db.query(query, values);

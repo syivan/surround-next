@@ -32,7 +32,7 @@ export default function SearchBar() {
       <Form.Control
         size="md"
         type="text"
-        placeholder="Enter text here..."
+        placeholder="Search"
         value={searchTerm}
         onChange={handleChange}
         className={styles["search-bar"]}

@@ -14,7 +14,7 @@ const VideoPlayer = ({ videoID }) => {
     <LiteYoutubeEmbed
       id={videoID}
       title="Youtube Embeddable"
-      poster="sddefault"
+      poster="hqdefault"
     />
   ) : (
     <h1>Never Rendered</h1>
